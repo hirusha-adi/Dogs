@@ -13,8 +13,9 @@
     <input id="one" type="text" class="search-bar" placeholder="Enter Breed">
 
     <!-- the true part of the js ternary operator does not work as intended. i hope to fix this in the near future -->
-    <button id="two" class="search-bar" onclick="(toString(window.location).includes('?breed=')) ? window.location = toString(window.location).split('?breed=')[0] + '?breed=' + document.getElementById('one').value : window.location = window.location + '?breed=' + document.getElementById('one').value"></button>
-    <a class="home" onclick="(toString(window.location).includes('breed=')) ? window.location = toString(window.location).split('?breed=')[0] + '?breed=' + document.getElementById('one').value : window.location = window.location + '?breed=' + document.getElementById('one').value">Submit</a>
+    <button id="two" class="search-bar" onclick="window.location = '{{ HOME_host_url }}?breed=' + document.getElementById('one').value"></button>
+    
+    <a class="home" onclick="window.location = '{{ HOME_host_url }}?breed=' + document.getElementById('one').value">Submit</a>
 
     <div class="icon-container">
 

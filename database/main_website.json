@@ -8,6 +8,7 @@
             "discord_bot_invite_url": "https://ptb.discord.com/api/oauth2/authorize?client_id=947890965383889016&permissions=8&scope=bot",
             "creator_main_site": "http://hirusha.xyz"
         },
-        "creator_pfp": "https://cdn.discordapp.com/attachments/877796755234783273/949334906511700028/KDE2logo.png"
+        "creator_pfp": "https://cdn.discordapp.com/attachments/877796755234783273/949334906511700028/KDE2logo.png",
+        "host_url": "http://dogs.hirusha.xyz/"
     }
 }

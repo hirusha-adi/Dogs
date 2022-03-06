@@ -36,6 +36,7 @@ def index():
                                HOME_logo=HOME["logo"],
                                HOME_title=HOME["title"],
                                HOME_links=HOME["links"],
+                               HOME_host_url=HOME["host_url"]
                                )
 
     else:
@@ -48,6 +49,7 @@ def index():
                                HOME_logo=HOME["logo"],
                                HOME_title=HOME["title"],
                                HOME_links=HOME["links"],
+                               HOME_host_url=HOME["host_url"]
                                )
 
 
