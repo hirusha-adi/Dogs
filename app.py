@@ -58,9 +58,13 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 
-if __name__ == "__main__":
+def runWebsite():
     with open(os.path.join(os.getcwd(), "database", "settings.json"), "r", encoding="utf-8") as f1:
         host_data = json.load(f1)
 
     app.run(str(host_data["website"]["host"]),
             port=int(host_data["website"]["port"]))
+
+
+if __name__ == "__main__":
+    runWebsite()
