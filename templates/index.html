@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>{{ HOME_title }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+  <div class="menu">
+
+    <img draggable="false" class="logo" src="{{ HOME_logo }}">
+    
+    <input id="one" type="text" class="search-bar" placeholder="Enter Breed">
+
+    <!-- the true part of the js ternary operator does not work as intended. i hope to fix this in the near future -->
+    <button id="two" class="search-bar" onclick="(toString(window.location).includes('?breed=')) ? window.location = toString(window.location).split('?breed=')[0] + '?breed=' + document.getElementById('one').value : window.location = window.location + '?breed=' + document.getElementById('one').value"></button>
+    <a class="home" onclick="(toString(window.location).includes('breed=')) ? window.location = toString(window.location).split('?breed=')[0] + '?breed=' + document.getElementById('one').value : window.location = window.location + '?breed=' + document.getElementById('one').value">Submit</a>
+
+    <div class="icon-container">
+
+      <a href="#" target="_blank" rel="noopener noreferrer" onclick="window.location = 'http://dogs.hirusha.xyz/'">
+        <img tabindex="1" draggable="false" class="icon message" src="https://cdn.discordapp.com/attachments/877796755234783273/950075575706464307/4-46972_cross-mark-x-symbol-hd-png-download.png">
+      </a>
+      <a href="{{ HOME_links['github_repo'] }}" target="_blank" rel="noopener noreferrer">
+        <img tabindex="1" draggable="false" class="icon bell" src="https://cdn.discordapp.com/attachments/877796755234783273/949327261159550996/25231.png">
+      </a>
+      <img tabindex="1" draggable="false" class="icon pp" src="{{ HOME['creator_pfp'] }}">
+      <img tabindex="1" draggable="false" class="icon btn" src="https://i.hizliresim.com/g15mqud.png">
+      
+      <div tabindex="1" class="focus-bar bell-bar">nothing</div>
+      <div tabindex="1" class="focus-bar message-bar">
+      </div>
+      <div tabindex="1" class="focus-bar pp-bar">
+        <img src="{{ HOME['creator_pfp'] }}">
+        Made by 
+        <a href="{{ HOME_links['creator_main_site'] }}" target="_blank">
+          @hirusha-adi
+        </a>
+      </div>
+      <div tabindex="1" class="focus-bar btn-bar">
+        <a href="{{ HOME_links['creator_main_site'] }}" target="_blank">
+          Hey! Check out my other projects!
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="responsive-search-bar">
+      <input type="text">
+      <p class="close">❌</p>
+  </div>
+
+  <div class="container">
+    
+
+    {% for item in sorted_list %}
+      <div class="window">
+          <div id="zoomBOut">
+              <div id="zoomBIn">
+                  <img class="foto" src="{{ item }}">
+              </div>
+          </div>
+      </div>
+    {% endfor %}
+
+
+  </div>
+
+</body>
+
+<!-- partial -->
+<script  src="{{ url_for('static', filename='js/custom.js') }}"></script>
+
+</html>
