@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Dogs
 
-You can use the [editor on GitHub](https://github.com/hirusha-adi/Dogs/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[Click here](http://dogs.hirusha.xyz) to test a deployment
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+A website with dog images
 
-### Markdown
+## What is this?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- A website with dog images
 
-```markdown
-Syntax highlighted code block
+## Who is this for?
 
-# Header 1
-## Header 2
-### Header 3
+- If you have some weird obsession with dogs for some weird reason, this website made for you
 
-- Bulleted
-- List
+## Do i like dogs?
 
-1. Numbered
-2. List
+- **Sort of...** They bite and bark but i'm ok with dealing with a dog
 
-**Bold** and _Italic_ and `Code` text
+Forked from my [Cats Github Repo](https://github.com/hirusha-adi/Cats)
 
-[Link](url) and ![Image](src)
+# How to deploy the services
+
+- ## Debian/Ubuntu
+
+```
+sudo apt update && sudo apt install git python3 python3-pip -y
+git clone https://github.com/hirusha-adi/Dogs.git && cd ./Dogs
+pip3 install -r requirements.txt
+python3 app.py &
+disown -h
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+- ## Arch Linux
 
-### Jekyll Themes
+```
+sudo pacman -Syy git python python-pip --noconfirm
+git clone https://github.com/hirusha-adi/Dogs.git && cd ./Dogs
+pip install -r requirements.txt
+python app.py &
+disown -h
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/hirusha-adi/Dogs/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- ## Microsoft Windows
 
-### Support or Contact
+This is the most annoying and troublesome operating system to ever exist. If you want to get shit done, please stop using this useless operating system and switch to linux. If you are using a windows to deploy software instead of linux, **get a new life**
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# API's Used
+
+1. https://dog.ceo/dog-api/documentation/
+
+# Image Showcase
+
+![image2](https://cdn.discordapp.com/attachments/877796755234783273/950380153798819870/unknown.png)
+
+![image](https://user-images.githubusercontent.com/36286877/157040981-4199992b-f849-45b2-9640-1078cbb33c8f.png)
+
