@@ -47,3 +47,9 @@ This is the most annoying and troublesome operating system to ever exist. If you
 # API's Used
 
 1. https://dog.ceo/dog-api/documentation/
+
+# Image Showcase
+
+![image](https://user-images.githubusercontent.com/36286877/157040981-4199992b-f849-45b2-9640-1078cbb33c8f.png)
+
+![image](https://user-images.githubusercontent.com/36286877/157040998-62693c59-3cc2-404d-ad1f-ac9200f67efb.png)
